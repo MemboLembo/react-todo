@@ -24,7 +24,7 @@ export default class SearchPanel extends Component {
   }
 };
 
-//через хуки
+//using hooks
 // const SearchPanel = ({onChange}) => {
 //   const [value, setValue] = useState('');
 

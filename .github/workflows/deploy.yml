@@ -13,9 +13,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       
-    - name: install
+    - name: Install
       run: yarn
-    - name: build
+    - name: Build
       run: yarn build
     - name: Bundle
       run: mkdir ./out && mv build ./out/react-todo-class

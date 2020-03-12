@@ -30,11 +30,11 @@ export default class App extends Component {
     };
   }
 
-  //поля классов - class fields (ф-ция)
+  //class fields (functions)
   deleteItem = id => {
     const todoData = this.state.todoData.filter(todo => todo.id !== id);
     this.setState({ todoData });
-    // 2й способ
+    // 2nd way
     // this.setState(({ todoData }) => {
     //   const idx = todoData.findIndex((el) => el.id === id);
     //   // todoData.splice(idx, 1) метод мутабельный, и здесь лучше не использовать
@@ -52,7 +52,7 @@ export default class App extends Component {
       this.setState({ todoData });
     }
 
-    // 2й способ
+    // 2nd way
     // const newItem = {
     //   label: text,
     //   important: false,
@@ -91,7 +91,7 @@ export default class App extends Component {
     this.setState({todoData: this.toggleProperty(id, 'done')});
   };
 
-    //2й способ
+  //2nd way
   // toggleProperty(arr, id, propName) {
   //     const idx = arr.findIndex(el => el.id === id);
 
